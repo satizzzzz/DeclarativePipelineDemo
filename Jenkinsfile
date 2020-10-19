@@ -3,7 +3,9 @@ pipeline {
     stages {  
             stage ('Build') {  
                 steps{
-                     echo "Building project done.." 
+                     echo "Building Hello World program.." 
+                     javac HelloWorld.java
+                     java HelloWorld
                 }
             }  
             stage ('Test') { 
